@@ -1,0 +1,55 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: darkgray;
+  width: 70%;
+  border-radius: 110px;
+  padding: 10px 0px;
+  margin: 10px;
+}
+
+@media (min-width: 800px) {
+  .language {
+    width: 20%;
+    border-radius: 0px;
+  }
+}
+
+.language p {
+  margin: 10px;
+}
+
+@media (min-width: 800px) {
+  .language p {
+    font-size: 1rem;
+  }
+}
+
+.language button {
+  margin: 10px;
+  background-color: inherit;
+  color: #0c290c;
+  border: none;
+}
+
+.language button:hover {
+  color: honeydew;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .language button {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=language.css.map */
