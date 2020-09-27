@@ -1,55 +1,48 @@
 * {
   padding: 0px;
-  margin: 0px;
+  margin : 0px;
+}
+
+.language-body {
+  background-color: rgb(90, 87, 87);
+  width           : 20%;
+  height          : 40%;
+  border          : 2px solid black;
+}
+
+
+
+.language-body:hover {
+  margin: 10Px;
 }
 
 .language {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: darkgray;
-  width: 70%;
-  border-radius: 110px;
-  padding: 10px 0px;
-  margin: 10px;
+  padding         : 1rem;
+  background-color: rgb(100, 98, 98);
+  color           : white;
+  text-align      : center;
 }
 
-@media (min-width: 800px) {
-  .language {
-    width: 20%;
-    border-radius: 0px;
-  }
+button {
+  margin-top      : 0.3rem;
+  background-color: tomato;
+  color           : white;
+  width           : 50%;
+  padding         : 0.5rem;
+  border          : none;
+  border-radius   : 10px;
+  font-size       : 14pt;
+  outline         : none;
 }
 
-.language p {
-  margin: 10px;
+button:hover {
+  background-color: white;
+  color           : tomato;
+  cursor          : pointer;
+  width           : 70%;
 }
 
-@media (min-width: 800px) {
-  .language p {
-    font-size: 1rem;
-  }
+img {
+  width : 100%;
+  height: 50%;
 }
-
-.language button {
-  margin: 10px;
-  background-color: inherit;
-  color: #0c290c;
-  border: none;
-}
-
-.language button:hover {
-  color: honeydew;
-  background-color: inherit;
-  cursor: pointer;
-}
-
-@media (min-width: 800px) {
-  .language button {
-    font-size: 1rem;
-  }
-}
-/*# sourceMappingURL=language.css.map */

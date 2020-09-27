@@ -8,19 +8,25 @@ export class Language extends Component {
         }
         this.vote = this.vote.bind(this);
     }
+
     vote() {
+        alert('Hurray 🎉 You cast Your vote');
         this.setState(
             {
                 counter: this.state.counter + 1
             }
         )
     }
+
     render() {
         return (
-            <div className="language">
-                <p>{this.state.counter}</p>
-                <p>{this.props.lang}</p>
-                <button onClick={this.vote}>click here to vote</button>
+            <div className="language-body">
+                <img src={this.props.image} alt="something went wrong" />
+                <div className="language">
+                    <p>{`Hey fella👋 i'm ${this.props.lang}. ${this.props.info} . You can build amazing things using me. If you like me click below 👇`}</p>
+                    <button onClick={this.vote}>Vote </button>
+                    <p>{this.state.counter}</p>
+                </div>
             </div>
         )
     }
