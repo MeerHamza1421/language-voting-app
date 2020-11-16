@@ -16,29 +16,6 @@
 }
 
 .voting-cards {
-  display              : grid;
-  grid-template-columns: repeat(auto-fit, 300px);
-  justify-content      : center;
-  gap                  : 2rem;
-  margin-bottom        : 3rem;
-}
-
-@media(max-width:740px) {
-  .main-title p {
-    width      : 70%;
-    line-height: 4rem;
-  }
-}
-
-@media(max-width:470px) {
-  .main-title p {
-    width: 80%;
-  }
-}
-
-@media(max-width:400px) {
-  .main-title p {
-    width    : 100%;
-    font-size: 17px;
-  }
+  display        : flex;
+  justify-content: space-between;
 }
